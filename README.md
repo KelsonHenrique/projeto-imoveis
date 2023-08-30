@@ -51,12 +51,16 @@ df.Tipo.value_counts(normalize=True).to_frame().sort_values('Tipo')
 E obtemos:
 ![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/70495635-1ebe-4bac-a809-52e8b140ee20)
 
+
+
 A equipe de Dev pediu que fosse feito o tratamento dos dados nulos:
 O primeiro passo é verificar a existência de dados nulos
+
 
 ````
 df_ap.isnull().sum()
 ```
+
 ![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/fdb5d069-f649-4ff8-a4d6-3ba2be433623)
 
 O segundo passo é transformá-los em 0, para esse projeto, especificamente.
@@ -64,6 +68,7 @@ O segundo passo é transformá-los em 0, para esse projeto, especificamente.
 ```
 df_ap.fillna(0)
 ```
+
 ![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/9d00a811-a530-4ac8-9055-29ec1de86c93)
 
 E foi pedido a quantidade de apartamentos que possuem pelo menos 2 quartos, aluguel menor que R$ 3000 e área maior que 70 m²
