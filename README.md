@@ -57,7 +57,7 @@ A equipe de Dev pediu que fosse feito o tratamento dos dados nulos:
 O primeiro passo é verificar a existência de dados nulos
 
 
-````
+```
 df_ap.isnull().sum()
 ```
 
