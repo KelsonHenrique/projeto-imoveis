@@ -23,6 +23,9 @@ Para tornar a apresentação desses dados mais atraentes, usamos o seguinte coma
 ```
 dados.groupby('Tipo')[['Valor']].mean().sort_values('Valor')
 ```
+Para obter:
+![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/949f4655-02d2-4744-8740-7ec3ef0741a9)
+
 
 A equipe de Machine Learning percebeu que seria mais interessante trabalhar apenas com imóveis residenciais. Então, iniciando o tratando do banco para selecionar os imóveis:
 
