@@ -65,4 +65,30 @@ df_ap.fillna(0)
 ```
 ![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/9d00a811-a530-4ac8-9055-29ec1de86c93)
 
+E foi pedido a quantidade de apartamentos que possuem pelo menos 2 quartos, aluguel menor que R$ 3000 e área maior que 70 m²
+
+```
+selecao = (df_ap['Quartos']>=2) * (df_ap['Valor']<3000) * (df_ap['Area']>70)
+```
+
+```
+df_ap[selecao]
+```
+
+![image](https://github.com/KelsonHenrique/projeto-imoveis/assets/141082201/f2e45ec3-9f91-4f9e-a779-baaa3946fdb6)
+
+## Como executar esse projeto 
+
+- Instale Python versão 3.10.7;
+- Instale o Anaconda para obter o jupyter notebook na sua máquina;
+- Essa instalação permite que você obtenha muitas bibliotecas relevantes para executar seu projeto;
+- Escolha, dentro do prompt de comando, o diretório onde irá realizar o seu projeto
+- Após a escolha do diretório, execute o comando a seguir para iniciar os trabalhos:
+```
+jupyter notebook
+```
+- Uma página do seu navegador será aberta, exibindo todas as pastas do diretório escolhido no comando anterior;
+- A partir daí, selecione "New > Python 3 (ipykernel)". Então, a interface do jupyter abrirá para você iniciar a syntax.
+ 
+
 
